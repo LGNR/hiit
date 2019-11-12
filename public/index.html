@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="/img/favicon2.ico" type="image/x-icon">
+    <title>HIIT</title>
+    <style>
+    	
+		.desktop-content {
+  		max-width: 1440px;
+  		margin: auto;
+		}
+		html, body, #page {
+	   margin:0;
+      padding:0;
+		}
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+		#div {
+    	margin:0;
+    	padding:0;
+    	}
+    	
+    	@media screen and (max-width: 600px) {
+  		div.desktop {
+    		display: none;
+    		}
+    	}
+    	@media screen and (min-width: 600px) {
+  		div.mobile {
+    		display: none;
+    		}
+    	}
+	</style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <div class="desktop">
+    <div class="desktop-content">
+      <div class="top"> 
+      	<img src="img/Home-Hiit-top.png" usemap="#top" width="1440" height="1494" border="0"> <map name="top">
+          <area shape="rect" coords="1035,35,1193,53" href="https://admin.hiit.io/">
+          <area shape="rect" coords="248,16,381,72" href="#">
+          <area shape="rect" coords="248,434,472,491" href="#">
+        </map>
+      </div>
+      <div class="middle" style="height: 502px; width: 1440px; position: relative" >
+			<img src="img/Home-Hiit-calculator.png" usemap="#calculator" width="1440" height="502" border="0"> 
+			<map name="calculator">
+				<area shape="rect" coords="592,321,848,377" href="#">
+			</map>
+			<div id="root"></div>
+        </div>
+      <div class="bottom-upper"> <img src="img/Home-Hiit-bottom-upper.png" width="1440"
+          height=auto border="0"> </div>
+         
+      <center>
+      	<div id="root3"></div>
+      </center>           	
+      <div class="bottom"> <img src="img/Home-Hiit-bottom.png" usemap="#bottom" width="1440"
+          height="396" border="0"> 
+			<map name="bottom">
+          <area shape="rect" coords="489,106,621,118" href="#">
+          <area shape="rect" coords="489,131,618,144" href="mailto:contacto@hiit.com">
+          <area shape="rect" coords="488,154,620,166" href="#">
+          <area shape="rect" coords="969,108,1102,118" href="https://admin.hiit.io/">
+          <area shape="rect" coords="960,139,1052,156" href="https://www.facebook.com/stackcodeio/">
+          <area shape="rect" coords="960,164,1035,178" href="https://twitter.com/stackcodeio">
+      	</map>
+      </div>
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin=""></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin=""></script>
+    <script src="calculator.js"></script>
+    </div>
+    <div class="mobile">
+    	<div class="mobile-content">
+    		<div class="mobile-top" style="background-color: black; height: 130px; position: relative">
+				<img src="/img/Logo_principal.png" style="position: absolute; top: 37px; left: 7%">
+				<a href="https://admin.hiit.io" style="text-decoration: none; position: absolute; top: 37px; right: 7%; font-size: 12px; color: white; font-family: Arial">Acceso a clientes</a>
+    		</div>
+    		<div class="mobile-top-middle" style="padding: 0">
+	    		<p>
+	    		<img src="/img/Compu_movil.png" style="position: relative; width: 100%">
+	    		<p style="font-size: 36px; font-family: Arial; text-align: center" >Controla tu centro deportivo</p>
+	    		<p style="font-size: 18px; font-family: Arial; text-align: center" >Control total de tus clases, ingresos, alumnos y maestros en tiempo real desde cualquier dispositivo</p>
+	    		<center>
+	    		<div class="button" style="background-color: #ff6319; width: 250px; height: 60px; border-radius: 5px; position: relative">
+					<a href="#" style="text-decoration: none"><p style="font-size: 28px; font-family:Arial; text-align:center; color: white; padding: 14px 0"> INICIA GRATIS </p></a>    		
+	    		</div>
+	    		</center>
+	    		<div style="height: 40px"></div>
+	    		<div style="background-color: #f1f5f7; height: 60px"></div>
+	    		<div style="background-color: #f1f5f7; height: 530px">
+	    			<img src="/img/hexagonos.png" style="position: relative; width: 100%; height: auto">
+	    			<p style="font-size: 36px; font-family: Arial; text-align: center; color: #ff6319" >Gestión poderosa</p>
+	    			<p style="font-size: 18px; font-family: Arial; text-align: center" >Domina las métricas que importan y toma mejores decisiones con nuestras herramientas de monitoreo en tiempo real</p>
+	    		</div>
+	    		<div style="position: relative">
+	    			<img src="/img/pesas_movil.png" style="width: 100%; height: auto">
+	    			<div style="position: absolute; top: 42px; left: 7%; color: white; font-family: Arial">
+						<ul style="list-style-image: url('/img/check.png')">
+							<li><b style="font-weight: bold">Toma decisiones</b> con el tablero de indicadores</li>
+							<li><b style="font-weight: bold">Gestiona</b> tus socios y entrenadores</li>
+							<li><b style="font-weight: bold">Registra</b> tus ventas</li>
+							<li><b style="font-weight: bold">Mide</b> la productividad de tu personal</li>
+							<li><b style="font-weight: bold">Administra</b> tus rutinas y clases</li>
+							<li><b style="font-weight: bold">Controla</b> tus ingresos y egresos</li>
+						</ul>    		
+	    			</div>   		
+	    		</div>
+	    		<div style="background-color: #252525"></div>
+	    		<p style="font-size: 36px; font-family: Arial; text-align: center; color: #ff6319" >Gestión poderosa</p>
+	    		<div style="background-color: #252525">   		
+	    		<div style="font-family: Arial; font-size: 16px; color: white">Cuota fija: </div>
+	    		<div></div>
+	    		<div style="font-family: Arial; font-size: 36px; color: white"><img src="/img/pesos.png">695<img src="/img/MXN.png"> 
+	    			<div><img src="/img/Group10.png"></div>
+	         </div> 
+	         	<div id="root2"></div> 
+	         	<div style="font-family: Arial; font-size:16px; color: white">(Pago mensual) </div>
+	         </div>
+	         <center>
+	         <div class="button" style="background-color: #ff6319; width: 250px; height: 60px; border-radius: 5px; position: relative">
+					<a href="#" style="text-decoration: none"><p style="font-size: 28px; font-family:Arial; text-align:center; color: white; padding: 14px 0"> INICIA GRATIS </p></a>    		
+	    		</div>
+	    		</center>
+	    		<div style="height: 30px"></div>
+	    	</div>
+	    	<div class="bottom-upper"> <img src="img/Home-Hiit-bottom-upper.png" height=auto border="0" style="position: relative; width: 100%"> </div>
+	    	<div>
+	    		<center>
+	      		<div style="font-family: Arial" id="root4"></div>
+   	   	</center> 
+   	   </div>
+    		<div class="mobile-bottom" style="background-color: black; height: 130px; position: relative">
+				<img src="/img/Logo_Hiit.png" style="position: absolute; top: 37px; left: 7%">
+				<a href="https://admin.hiit.io" style="text-decoration: none; position: absolute; top: 37px; right: 7%; font-size: 18px; color: white; font-family: Arial">Acceso a clientes</a>
+				<a href="#" style="text-decoration: none; position: absolute; top: 60px; right: 7%; font-size: 12px; color: white; font-family: Arial">Acerca de nosotros</a>
+				<a href="#" style="text-decoration: none; position: absolute; top: 83px; right: 7%; font-size: 12px; color: white; font-family: Arial">Contacto</a>
+				<a href="#" style="text-decoration: none; position: absolute; top: 103px; right: 7%; font-size: 12px; color: white; font-family: Arial">Aviso de privacidad</a>
+				<a href="https://www.facebook.com/stackcodeio/" style="text-decoration: none; position: absolute; top: 90px; left: 25%; font-size: 12px; color: white; font-family: Arial">Facebook</a>
+				<a href="https://twitter.com/stackcodeio" style="text-decoration: none; position: absolute; top: 110px; left: 25%; font-size: 12px; color: white; font-family: Arial">Twitter</a>
+    		</div>
+    	</div>
+    </div>
   </body>
 </html>
