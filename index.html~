@@ -37,14 +37,14 @@
   <div class="desktop">
     <div class="desktop-content">
       <div class="top"> 
-      	<img src="img/Home-Hiit-top.png" usemap="#top" width="1440" height="1494" border="0"> <map name="top">
+      	<img src="/img/Home-Hiit-top.png" usemap="#top" width="1440" height="1494" border="0"> <map name="top">
           <area shape="rect" coords="1035,35,1193,53" href="https://admin.hiit.io/">
           <area shape="rect" coords="248,16,381,72" href="#">
           <area shape="rect" coords="248,434,472,491" href="#">
         </map>
       </div>
       <div class="middle" style="height: 502px; width: 1440px; position: relative" >
-			<img src="img/Home-Hiit-calculator.png" usemap="#calculator" width="1440" height="502" border="0"> 
+			<img src="/img/Home-Hiit-calculator.png" usemap="#calculator" width="1440" height="502" border="0"> 
 			<map name="calculator">
 				<area shape="rect" coords="592,321,848,377" href="#">
 			</map>
@@ -133,7 +133,7 @@
    	   	</center> 
    	   </div>
     		<div class="mobile-bottom" style="background-color: black; height: 130px; position: relative">
-				<img src="/img/Logo_Hiit.png" style="position: absolute; top: 37px; left: 7%">
+				<img src="img/Logo_Hiit.png" style="position: absolute; top: 37px; left: 7%">
 				<a href="https://admin.hiit.io" style="text-decoration: none; position: absolute; top: 37px; right: 7%; font-size: 18px; color: white; font-family: Arial">Acceso a clientes</a>
 				<a href="#" style="text-decoration: none; position: absolute; top: 60px; right: 7%; font-size: 12px; color: white; font-family: Arial">Acerca de nosotros</a>
 				<a href="#" style="text-decoration: none; position: absolute; top: 83px; right: 7%; font-size: 12px; color: white; font-family: Arial">Contacto</a>
